@@ -22,7 +22,7 @@ app.use(bodyParser.text({ type: 'text/html' }));
 // override with POST having ?_method=DELETE or PUT
 app.use(methodOverride('_method'));
 
-// Set Handlebars as templating engine.
+// Set Handlebars
 var exphbs = require('express-handlebars');
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");

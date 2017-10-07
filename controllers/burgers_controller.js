@@ -24,7 +24,7 @@ router.post('/burgers/insertOne', function(req, res) {
 	});
 });
 
-// add a updateOne route that changes the status of the burger from being uneaten to eaten then redirects to the index endpoint
+// add a updateOne route that changes the status of the burger from being uneaten to eaten then redirects to index
 router.put('/burgers/updateOne/:id', function(req, res) {
 	var condition = 'id = ' + req.params.id;
 	console.log('condition', condition);
